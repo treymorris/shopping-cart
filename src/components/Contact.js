@@ -1,13 +1,14 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Home() {
+function Contact() {
   return (
-    <div className="container">
+    <div>
       <Header />
       <Footer />
+      <h1>Contact</h1>
     </div>
   );
 }
 
-export default Home;
+export default Contact;
