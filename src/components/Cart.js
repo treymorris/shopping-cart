@@ -1,11 +1,10 @@
-import Header from "./Header";
-import Footer from "./Footer";
+
 
 function Cart() {
     return (
       <div>
-        <Header />
-        <Footer />
+        <h1 className="text-center">Cart</h1>
+        
       </div>
     );
 }

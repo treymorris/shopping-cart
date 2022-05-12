@@ -1,12 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
 
 function Contact() {
   return (
     <div>
-      <Header />
-      <Footer />
-      <h1>Contact</h1>
+      <h1 className="text-center">Contact</h1>
+      
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Header() {
+function Nav() {
   return (
     <nav className="navbar">
       <div className="container-fluid">
@@ -8,13 +8,13 @@ function Header() {
           <NavLink className="p-3 nav-link" to="/">
             Home
           </NavLink>
-          <NavLink className="p-3 nav-link" to="/Shop">
+          <NavLink className="p-3 nav-link" to="/shop">
             Shop
           </NavLink>
-          <NavLink className="p-3 nav-link" to="/Cart">
+          <NavLink className="p-3 nav-link" to="/cart">
             Cart
           </NavLink>
-          <NavLink className="p-3 nav-link" to="/Contact">
+          <NavLink className="p-3 nav-link" to="/contact">
             Contact Us
           </NavLink>
         </div>
@@ -23,4 +23,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Nav;

@@ -1,11 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
 
 function Home() {
   return (
-    <div className="container">
-      <Header />
-      <Footer />
+    <div >
+      <h1 className="text-center ">Home</h1>
+      
     </div>
   );
 }
