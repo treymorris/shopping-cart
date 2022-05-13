@@ -21,13 +21,12 @@ function Shop() {
       }
     );
     const items = await data.json();
-    
-      setItems(items.data);
-      
-  };
+    //console.log(items)
 
-    const filtered = items.filter(item => item.item.images.featured !== null)
-        
+    setItems(items.data);
+  };
+  const filtered = items.filter((item) => item.item.images.featured !== null);
+
   return (
     <div>
       <h1 className="text-center text-white mt-3">Shop Fortnite</h1>
@@ -37,11 +36,11 @@ function Shop() {
             <div className="container shrink">
               <img src={item.item.images.icon} alt={item.itemId} />
             </div>
-            <h5 className="text-center imgTitle" >
+            <h5 className="text-center imgTitle">
               <NavLink to={`/shop/${item.itemId}`}>{item.item.name}</NavLink>
             </h5>
             <p className="text-center text-secondary imgTitle">
-              {item.store.cost} Dollar Bucks
+              {item.store.cost} vbucks
             </p>
             <p className="text-center text-info imgTitle">
               Rating: {item.item.ratings.avgStars} Stars

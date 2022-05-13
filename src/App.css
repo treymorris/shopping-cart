@@ -23,14 +23,29 @@ body {
   align-items: center;
 }
 
+.homeContainer {
+  height: 100vh;
+  width: 100vw;
+  background: url("https://cdn2.unrealengine.com/14br-consoles-1920x1080-wlogo-1920x1080-432974386.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+}
+
 a {
   text-decoration: none;
 }
 
 .shrink img {
-  transform: scale(.5);
+  transform: scale(0.5);
   background-color: darkgray;
   border-radius: 20px;
+}
+
+.shrink img:hover {
+  transform: scale(0.55);
+  background-color: darkgray;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px 15px red;
 }
 
 .imgTitle {

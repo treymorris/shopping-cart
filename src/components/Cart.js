@@ -1,12 +1,12 @@
+function Cart({ cart }) {
+  console.log(cart, "cart page state");
 
-
-function Cart() {
-    return (
-      <div>
-        <h1 className="text-center">Cart</h1>
-        
-      </div>
-    );
+  return (
+    <div>
+      <h1 className="text-center text-white">Cart</h1>
+      <p className="text-white text-center"></p>
+    </div>
+  );
 }
 
 export default Cart;

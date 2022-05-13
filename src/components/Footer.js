@@ -1,10 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 function Footer() {
+  let navigate = useNavigate();
+
   const handleClick = () => {
-    window.location.href = "/Shop";
+    navigate("/Shop");
   };
 
   return (
-    <div className="navbar bg-transparent d-flex justify-content-center ">
+    <div className="bg-transparent d-flex justify-content-center ">
       <button
         className="btn nav-link btn-sm"
         type="button"
