@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function Product({ cart, addItem }) {
-  console.log(cart, "product page ");
-
   const { id } = useParams();
 
   useEffect(() => {
@@ -50,6 +48,7 @@ function Product({ cart, addItem }) {
           className="btn btn-primary"
           onClick={() => {
             addItem(item);
+            navigate("/shop");
           }}
         >
           Add To Cart

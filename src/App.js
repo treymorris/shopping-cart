@@ -16,7 +16,10 @@ function App() {
     setCart([...cart, item]);
   };
 
-  const removeItem = () => {};
+  const removeItem = (name) => {
+    const filtered = cart.filter((item) => item.name !== name);
+    setCart(filtered);
+  };
 
   return (
     <div>

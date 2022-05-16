@@ -21,15 +21,14 @@ function Shop() {
       }
     );
     const items = await data.json();
-    //console.log(items)
-
     setItems(items.data);
   };
+  
   const filtered = items.filter((item) => item.item.images.featured !== null);
 
   return (
     <div>
-      <h1 className="text-center text-white mt-3">Shop Fortnite</h1>
+      <h1 className="text-center text-light mt-5">Shop Fortnite</h1>
       <div className="productList">
         {filtered.map((item) => (
           <div className="" key={item.itemId}>

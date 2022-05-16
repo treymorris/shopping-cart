@@ -15,7 +15,7 @@ function Nav() {
             Cart
           </NavLink>
           <NavLink className="p-3 nav-link" to="/contact">
-            Contact Us
+            Checkout
           </NavLink>
         </div>
       </div>
