@@ -25,7 +25,7 @@ function Cart({ cart, removeItem }) {
             </h5>
             <p className="card-text">{item.cost} vbucks</p>
             <button
-              className="btn btn-primary"
+              className="btn btn-primary w-100 mx-auto"
               onClick={() => {
                 removeItem(item.name);
               }}
