@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
 import Product from "./components/Product";
-import Contact from "./components/Contact";
+import Checkout from "./components/Checkout";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -26,7 +26,7 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/shopping-cart" element={<Home />} />
           <Route
             path="/shop"
             element={
@@ -37,7 +37,7 @@ function App() {
             path="/cart"
             element={<Cart cart={cart} removeItem={removeItem} />}
           />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route
             path="/shop/:id"
             element={

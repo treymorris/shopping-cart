@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 function Shop() {
   useEffect(() => {
     fetchItems();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [items, setItems] = useState([]);

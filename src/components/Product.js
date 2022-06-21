@@ -7,6 +7,7 @@ function Product({ cart, addItem }) {
 
   useEffect(() => {
     fetchItem();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [item, setItem] = useState({

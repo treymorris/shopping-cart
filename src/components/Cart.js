@@ -10,7 +10,8 @@ function Cart({ cart, removeItem }) {
   let navigate = useNavigate();
 
   const handleCheckout = () => {
-    navigate("/contact");
+    navigate("/checkout");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

@@ -5,6 +5,7 @@ function Footer() {
 
   const handleClick = () => {
     navigate("/Shop");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
